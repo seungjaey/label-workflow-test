@@ -1,8 +1,9 @@
-name: CD-Stage
+name: TEST-ENV
 
 on:
   push:
     branches:
+      - '*'
       - '!main'
       - '!stage'
 
