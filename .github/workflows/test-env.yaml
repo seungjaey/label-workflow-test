@@ -15,3 +15,4 @@ jobs:
         run:
           echo "DEBUG"
           echo $github.event.label.name
+          echo "t2"
