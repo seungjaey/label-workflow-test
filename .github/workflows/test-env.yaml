@@ -2,10 +2,9 @@ name: TEST-ENV
 
 on:
   push:
-    branches:
-      - '*'
-      - '!main'
-      - '!stage'
+    branches-ignore:
+      - 'main'
+      - 'stage'
 
 jobs:
   job1:
