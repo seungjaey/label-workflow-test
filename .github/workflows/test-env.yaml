@@ -28,6 +28,5 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Get variables
-        id: extract
-        uses: ./.github/actions/debug
+      - name: debug
+        uses: ./.github/actions/debug.js
