@@ -1,0 +1,6 @@
+name: 'debug-variables'
+description: 'Debug variables'
+
+runs:
+  using: 'node16'
+  main: 'debug.js'

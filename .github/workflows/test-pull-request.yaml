@@ -1,10 +1,7 @@
-name: TEST-ENV
+name: TEST-PULL-REQUEST
 
 on:
-  push:
-    branches-ignore:
-      - 'main'
-      - 'stage'
+  pull_request:
 
 jobs:
   job1:
