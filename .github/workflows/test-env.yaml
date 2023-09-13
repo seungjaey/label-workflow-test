@@ -1,0 +1,16 @@
+name: CD-Stage
+
+on:
+  push:
+    branches:
+      - '!main'
+      - '!stage'
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Label Exist
+        run:
+          echo "DEBUG"
+          echo $github.event.label.name
